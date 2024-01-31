@@ -1,0 +1,62 @@
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../../assets/img/foto_de_fundo.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" id="more">About Me</h1>
+                <p class="text">Hello my name is <span>Matheus Fonseca</span>  and i'm a brazilian analysis and system development student! <br>
+                  Focused in learning <span>front end</span> and <span>back end</span>, to become a <span>full stack developer</span>. <br>
+                  Always trying to find a good opportunity to <span>grow</span> and <span>improve my knowledge</span>, if you like my project or <br>
+                  have some advices to improve it, feel free to email me! 😁
+                </p>
+
+                <div class="tb-titles">
+                    <p class="tab-links" (click)="abaAtiva = 'Hard Skills'" [class.active-link]="abaAtiva ==='Hard Skills'">Hard Skills</p>
+                    <p class="tab-links" (click)="abaAtiva = 'Soft Skills'" [class.active-link]="abaAtiva ==='Soft Skills'">Soft Skills</p>
+                    <p class="tab-links" (click)="abaAtiva = 'Experience'" [class.active-link]="abaAtiva=== 'Experience'">Experience</p>
+                    <p class="tab-links" (click)="abaAtiva = 'Education'" [class.active-link]="abaAtiva === 'Education'">Education</p>
+                  </div>
+                  
+                  <div class="tab-contents" [ngClass]="{'active-tab': abaAtiva === 'Hard Skills'}" id="Hard Skills">
+                    <!-- Conteúdo da aba Skills -->
+                    <ul>
+                      <li><span>SQL</span><br>Basic</li>
+                      <li><span>Power BI</span><br>Basic</li>
+                      <li><span>HTML</span><br>Basic</li>
+                      <li><span>Python</span><br>Basic</li>
+                      <li><span>Angular</span><br>Basic</li>
+                      <li><span>English</span><br>Intermediary</li>
+                    </ul>
+                  </div>
+
+                  <div class="tab-contents" [ngClass]="{'active-tab': abaAtiva === 'Soft Skills'}" id="Soft Skills">
+                    <!-- Conteúdo da aba Skills -->
+                    <ul>
+                      <li><span>Proactive</span></li>
+                      <li><span>Colaboractive</span></li>
+                      <li><span>Adaptability</span></li>
+                      <li><span>Organization</span></li>
+                      <li><span>Empathy</span></li>
+                      <li><span>Willingness to learn</span></li>
+                    </ul>
+                  </div>
+                  
+                  <div class="tab-contents" [ngClass]="{'active-tab': abaAtiva === 'Experience'}" id="Experience">
+                    <!-- Conteúdo da aba Experience -->
+                    <ul>
+                      <li><span>2022 - Now</span><br>Ecardio Integrada: Intern</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="tab-contents" [ngClass]="{'active-tab': abaAtiva === 'Education'}" id="Education">
+                    <!-- Conteúdo da aba Education -->
+                    <ul>
+                      <li><span>Uniasselvi:</span><br>analysis and system development</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

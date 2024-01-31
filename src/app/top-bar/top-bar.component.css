@@ -1,0 +1,116 @@
+
+
+
+.container-top-bar{
+    padding: 10px 10%;
+    
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+}
+
+nav ul li a{
+    color: rgb(116, 99, 99);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #49DDF0;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+    /*transition: all 0.2s ease 0s;*/
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+nav ul li a:hover{
+    color: #f882f2;
+    
+}
+
+@media (max-width: 430px) {
+    .container-top-bar {
+        padding: 0px;
+        width: 100%;
+        margin: 0px 0px;
+        justify-content: center;
+    }
+    
+
+    .container-top-bar ul li a {
+        font-size: 14px; /* Ajuste o tamanho conforme necessário */
+        width: 100%; /* Remova a largura fixa para que os links se ajustem automaticamente */
+        display: flex; /* Certifique-se de que cada link ocupa a largura total disponível */
+        text-align: center; /* Centralize o texto dentro dos links */
+        margin: 5px 0px; /* Ajuste as margens conforme necessário */
+        padding: 0px 0px;
+    
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    /* nav ul {
+        width: 100%;
+    } */
+}
+
+
+  /* @media only screen and (min-width: 1024px) {
+     For tablets: 
+    
+    .container{
+        padding: 0px 0%;
+    }
+
+     nav ul li a{
+        width: 10%;
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .container{
+        padding: 0px 0%;
+    }
+    .logo{
+        width: 30%;
+
+    }
+    
+
+    nav ul{
+        width: 100%;
+
+    } 
+   
+  } */
+
+ 

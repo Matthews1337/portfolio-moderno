@@ -1,0 +1,181 @@
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    padding: 10px 10%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+
+}
+
+
+@keyframes fadeIn{
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    animation: fadeIn 5s;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tb-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+
+.tab-links{
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #49DDF0;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+}
+
+
+.tab-links.active-link::after{
+    width: 50%;
+    
+    
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span{
+    color :#f882f2;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+    
+}
+
+.tb-titles p:hover {
+    color: #f882f2;
+}
+
+
+.about-col-2 p span{
+    color: #49DDF0;
+}
+
+.about-col-2 .text{
+    color: white;
+}
+
+@media (max-width: 430px) {
+
+    #about{
+        color: #ababab;
+        padding: 0px ;
+    }
+
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about-col-1{
+        flex-basis:100%;
+    }
+
+    .about-col-1 img{
+        position: relative;
+    }
+
+    .about-col-2{
+        font-size: small;
+        width: 380px;
+
+    }
+
+    .about-col-2 .text{
+        width: 70%;
+        
+    }
+
+    .tb-titles{
+        width: 380px;
+        margin-top: 30px;
+        
+    }
+
+    .tb-titles p{
+        font-size: 15px;
+        
+    }
+
+    .tab-contents ul li{
+        width: 350px;
+    }
+    
+}
+
+/* @media (max-width: 880px) {
+
+    #about{
+        color: #ababab;
+        padding: 0px ;
+    }
+
+    .about-col-2{
+        font-size: small;
+        width: 880px;
+
+    }
+
+    .about-col-1 img{
+        position: relative;
+    }
+
+    
+    
+} */
+
+
+
+
+
