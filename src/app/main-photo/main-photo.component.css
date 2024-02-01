@@ -1,7 +1,7 @@
 .header {
     width: 100%;
     height: 100vh;
-    background-image: url("../../assets/img/curriculo_photo_edited.jpg");
+    background-image: url("assets/img/curriculo_photo_edited.jpg");
 
     background-repeat: no-repeat;
     background-size: 900px;
